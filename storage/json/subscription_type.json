@@ -1,0 +1,23 @@
+[
+    {
+        "sub_title" : "Basic",
+        "sub_description" : "The basic pricing will contain payment, inventory, sales",
+        "sub_amount" : 3500.0000
+    },
+    {
+        "sub_title" : "Standard",
+        "sub_description" : "The standard pricing will contain Payment, Inventory, Connect, Financial management, e-commerce",
+        "sub_amount" : 5500.0000
+    },
+    {
+        "sub_title" : "Premium",
+        "sub_description" : "The Premium will contain Payment, Inventory, Connect, Financial, payroll, e-commerce, Sales",
+        "sub_amount" : 15500.0000
+    }
+    ,
+    {
+        "sub_title" : "Enterprise",
+        "sub_description" : "Enterprise will need to request/call us to discuss with us to offer customizable features base on their needs. Contains everything",
+        "sub_amount" : 15500.0000
+    }
+]
