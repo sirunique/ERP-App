@@ -15,6 +15,7 @@ use App\Models\Role;
 use App\Models\RoleUser;
 use App\Models\Permission;
 use App\Models\PermissionRole;
+use App\Models\SubscriptionType;
 
 
 class SetupController extends Controller
@@ -111,6 +112,16 @@ class SetupController extends Controller
                 'success' => false,
                 'message' => 'Error Occur Try Again',
             ]);
+        }
+    }
+
+    public function get_sub_types()
+    {
+        try {
+            $sub_type = $this->get_data(SubscriptionType::class);
+            return $this->response(Response::HTTP_OK, true, 'SubTypes', ['SubTypes' => $sub_type]);
+        } catch (\Exception $e) {
+            return $this->server_error_response($e);
         }
     }
 }

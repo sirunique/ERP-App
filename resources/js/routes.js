@@ -12,6 +12,11 @@ const routes = [
         // component: require("./components/HomeComponent.vue").default
     },
     {
+        path: "/set-up",
+        name: "set-up",
+        component: require("./components/SetupComponent.vue").default
+    },
+    {
         path: "/login",
         name: "login",
         component: require("./components/LoginComponent.vue").default

@@ -13,18 +13,21 @@ export const createType = async () => {
     }
     return data;
 };
+
 export const deleteType = async () => {
     let state = store.state.type;
     if (!state.type) return;
     const data = await deleteReq("api/admin/type/" + state.type.type_id);
     return data;
 };
+
 export const getType = async () => {
     let state = store.state.type;
     if (!state.type) return;
     const data = await getReq("api/admin/type/" + state.type.type_id);
     return data;
 };
+
 export const getTypes = async () => {
     const data = await getReq("api/admin/type");
     return data;

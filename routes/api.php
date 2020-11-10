@@ -36,16 +36,25 @@ use App\Http\Controllers\AttendanceController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\RoleUserController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\SubscriptionTypeController;
 
 
 
 // Bussines and Account Setup
 Route::post('setup', [SetupController::class, 'setup']);
+Route::get('get-sub-type', [SetupController::class, 'get_sub_types']);
 
 // Account Login
 Route::post('login', [UserController::class, 'login']);
 Route::post('logout', [UserController::class, 'logout']);
 // Route::post('register', [UserController::class, 'register']);
+
+// Sub Type
+// Route::get('sub-type', [SubscriptionTypeController::class, 'index']);
+// Route::post('/sub-type', [SubscriptionTypeController::class, 'store']);
+// Route::get('/sub-type/{sub_type_id}', [SubscriptionTypeController::class, 'show']);
+// Route::put('/sub-type/{sub_type_id}', [SubscriptionTypeController::class, 'update']);
+// Route::delete('/sub-type/{sub_type_id}', [SubscriptionTypeController::class, 'destroy']);
 
 // prefix('/admin')->name('admin.')->
 Route::group([

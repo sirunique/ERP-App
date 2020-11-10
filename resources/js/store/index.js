@@ -2,6 +2,7 @@ import Vue from "vue";
 import Vuex from "vuex";
 import axios from "axios";
 import VueAxios from "vue-axios";
+import setup from "./setup";
 import auth from "./auth";
 import category from "./category";
 import brand from "./brand";
@@ -18,6 +19,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
     namedspaced: true,
     modules: {
+        setup,
         auth,
         category,
         brand,
