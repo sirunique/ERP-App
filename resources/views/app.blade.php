@@ -18,9 +18,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Main CSS-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('vali') }}/css/main.css">
+    <link rel="stylesheet" type="text/css" href="{{ secure_asset('vali') }}/css/main.css">
     <!-- Font-icon css-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('vali') }}/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ secure_asset('vali') }}/css/font-awesome.min.css">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -34,23 +34,23 @@
     <script src="{{mix('js/app.js')}}"></script>
 
     <!-- Essential javascripts for application to work-->
-    {{-- <script src="{{ asset('vali') }}/js/jquery-3.3.1.min.js"></script> --}}
-    <script src="{{ asset('vali') }}/js/popper.min.js"></script>
-    <script src="{{ asset('vali') }}/js/bootstrap.min.js"></script>
-    <script src="{{ asset('vali') }}/js/main.js"></script>
+    {{-- <script src="{{ secure_asset('vali') }}/js/jquery-3.3.1.min.js"></script> --}}
+    <script src="{{ secure_asset('vali') }}/js/popper.min.js"></script>
+    <script src="{{ secure_asset('vali') }}/js/bootstrap.min.js"></script>
+    <script src="{{ secure_asset('vali') }}/js/main.js"></script>
      <!-- The javascript plugin to display page loading on top-->
-     <script src="{{ asset('vali') }}/js/plugins/pace.min.js"></script>
+     <script src="{{ secure_asset('vali') }}/js/plugins/pace.min.js"></script>
     {{-- Canvas JS For Chart --}}
-    <script src="{{ asset('vali') }}/js/canvas.js"></script>
+    <script src="{{ secure_asset('vali') }}/js/canvas.js"></script>
     <!-- Page specific javascripts-->
-    <script type="text/javascript" src="{{ asset('vali') }}/js/plugins/chart.js"></script>
+    <script type="text/javascript" src="{{ secure_asset('vali') }}/js/plugins/chart.js"></script>
     <!-- Data table plugin-->
-    <script type="text/javascript" src="{{ asset('vali') }}/js/plugins/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="{{ asset('vali') }}/js/plugins/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{ secure_asset('vali') }}/js/plugins/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="{{ secure_asset('vali') }}/js/plugins/dataTables.bootstrap.min.js"></script>
     
-    <script type="text/javascript" src="{{ asset('vali') }}/js/plugins/jquery.vmap.min.js"></script>
-    <script type="text/javascript" src="{{ asset('vali') }}/js/plugins/jquery.vmap.world.js"></script>
-    <script type="text/javascript" src="{{ asset('vali') }}/js/plugins/jquery.vmap.sampledata.js"></script>
+    <script type="text/javascript" src="{{ secure_asset('vali') }}/js/plugins/jquery.vmap.min.js"></script>
+    <script type="text/javascript" src="{{ secure_asset('vali') }}/js/plugins/jquery.vmap.world.js"></script>
+    <script type="text/javascript" src="{{ secure_asset('vali') }}/js/plugins/jquery.vmap.sampledata.js"></script>
     <script type="text/javascript">$('#sampleTable').DataTable();</script>
     
 </body>
