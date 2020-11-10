@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class SubscriptionType extends Model
 {
     use HasFactory;
+    protected $table = 'subscription_types';
+    protected $primaryKey = 'sub_type_id';
 }
